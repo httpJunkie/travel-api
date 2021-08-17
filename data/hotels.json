@@ -1,0 +1,261 @@
+// SF
+[[
+  {
+    "id": 1,
+    "name": "Courtyard Fisherman's Wharf",
+    "address": "580 Beach St",
+    "city": "San Francisco",
+    "state": "California",
+    "geo": {
+      "lat": 50.962097,
+      "lon": 1.954764
+    },
+    "phone": "415 775-3800",
+    "reviews": [
+      {
+        "author": "Gina Jordan",
+        "content": "This hotel is okay.",
+        "date": "2020-08-13 23:42:23 +0300",
+        "ratings": {
+          "Cleanliness": 7,
+          "Service": 5,
+          "Overall": 6
+        }
+      },
+      {
+        "author": "Joe Blazay",
+        "content": "This hotel is great.",
+        "date": "2020-08-13 23:42:23 +0300",
+        "ratings": {
+          "Cleanliness": 7,
+          "Service": 9,
+          "Overall": 8
+        }
+      }
+    ],
+    "url": "http://www.marriott.com/hotels/travel/sfocf-courtyard-san-francisco-fishermans-wharf/",
+    "vacancy": true
+  },
+  {
+    "id": 2,
+    "name": "Inn on Castro",
+    "address": "321 Castro St",
+    "city": "San Francisco",
+    "state": "California",
+    "geo": {
+      "lat": 37.7634,
+      "lon": -122.435
+    },
+    "phone": "415 861-0321",
+    "reviews": [
+      {
+        "author": "Mason Koepp",
+        "content": "My favorite hotel in SF!",
+        "date": "2021-08-15 16:57:56 +0300",
+        "ratings": {
+          "Cleanliness": 6,
+          "Service": 5,
+          "Overall": 5.75
+        }
+      }
+    ],
+    "url": "http://www.innoncastro.com/",
+    "vacancy": false
+  },
+  {
+    "id": 3,
+    "name": "Twin Peaks Hotel",
+    "address": "2160 Market St",
+    "city": "San Francisco",
+    "state": "California",
+    "geo": {
+      "lat": 37.7669,
+      "lon": -122.4303
+    },
+    "phone": "415 863-2909",
+    "reviews": [
+      {
+        "author": "Damien D'Amore",
+        "content": "Book the 'San Francisco Package', first class accomodations in a perfect location.",
+        "date": "2019-04-01 13:39:41 +0300",
+        "ratings": {
+          "Cleanliness": 9,
+          "Service": 4,
+          "Overall": 6.5
+        }
+      },
+      {
+        "author": "Keyshawn Kenzie",
+        "content": "Unpleasant experience, unsatifactory that the Management, nice rooms.",
+        "date": "2012-11-26 07:38:02 +0300",
+        "ratings": {
+          "Cleanliness": 7,
+          "Service": 5,
+          "Overall": 6
+        }
+      },
+      {
+        "author": "Lorenzo Larson",
+        "content": "Great location and good service (Wholefoods is right down the street)",
+        "date": "2020-02-23 12:11:41 +0300",
+        "ratings": {
+          "Cleanliness": 7,
+          "Service": 5,
+          "Overall": 6
+        }
+      }
+    ],
+    "url": "http://www.twinpeakshotel.us",
+    "vacancy": true
+  },
+
+  {
+    "id": 4,
+    "name": "The Green Tortoise Hostel",
+    "address": "494 Broadway St",
+    "city": "San Francisco",
+    "state": "California",
+    "geo": {
+      "lat": 37.7983,
+      "lon": -122.4053
+    },
+    "phone": "415 834-1000",
+    "reviews": [
+      {
+        "author": "Ayana Swaniawski",
+        "content": "The Chancellor is an amazing, lovely botique hotel.",
+        "date": "2020-01-06 00:58:13 +0300",
+        "ratings": {
+          "Cleanliness": 4,
+          "Service": 4,
+          "Overall": 4
+        }
+      },
+      {
+        "author": "Luisa Collins Jr.",
+        "content": "Four day stay at Chancellor was wonderful.",
+        "date": "2019-06-29 06:41:35 +0300",
+        "ratings": {
+          "Cleanliness": 4,
+          "Service": 6,
+          "Overall": 5
+        }
+      },
+      {
+        "author": "Newton Gulgowski",
+        "content": "Great place for exploring Frisco. Don't say Frisco though, makes you sound like a tourist!",
+        "date": "2018-10-20 01:10:34 +0300",
+        "ratings": {
+          "Cleanliness": 6,
+          "Service": 6,
+          "Overall": 5
+        }
+      },
+      {
+        "author": "Jailyn Waelchi",
+        "content": "I picked this hotel by other reviews. The Chancellor is a very nice boutique hotel.",
+        "date": "2012-02-07 19:21:36 +0300",
+        "ratings": {
+          "Cleanliness": 7,
+          "Service": 6.25,
+          "Overall": 6
+        }
+      }
+    ],
+    "url": "http://www.greentortoise.com/san-francisco-hostel/",
+    "vacancy": true
+  }
+],
+
+// LA
+[
+  {
+    "id": 5,
+    "name": "Hollywood Heights Hotel",
+    "address": "2005 N Highland Ave",
+    "city": "Los Angeles",
+    "state": "California",
+    "geo": {
+      "lat": 34.106661,
+      "lon": -118.337732
+    },
+    "phone": "323 876-8600",
+    "reviews": [
+      {
+        "author": "Milford Reichel",
+        "content": "I was intrigued by this hotel when I drove by it, mostly due to the big cheesy sign, this is a great deal and you will not be disappointed, especially if you like retro things!",
+        "date": "2021-5-17 18:33:14 +0300",
+        "ratings": {
+          "Cleanliness": 5,
+          "Service": 4,
+          "Overall": 4
+        }
+      }
+    ],
+    "url": "http://www.hollywoodheightshotel.com",
+    "vacancy": false
+  },
+  {
+    "id": 6,
+    "name": "The Roosevelt Hotel",
+    "address": "7000 Hollywood Blvd",
+    "city": "Los Angeles",
+    "state": "California",
+    "country": "United States",
+    "geo": {
+      "lat": 34.101375,
+      "lon": -118.341691
+    },
+    "phone": "323 466-7000",
+    "reviews": [],
+    "url": "http://www.hollywoodroosevelt.com",
+    "vacancy": false
+  },
+
+  {
+    "id": 7,
+    "name": "Figueroa Hotel",
+    "address": "939 S Figueroa St",
+    "city": "Los Angeles",
+    "state": "California",
+    "geo": {
+      "lat": 34.045481,
+      "lon": -118.26387
+    },
+    "phone": "800 421-9092",
+    "reviews": [
+      {
+        "author": "Rey Cronin",
+        "content": "The hotel looks like the picture which is a good thing, it's beautiful.",
+        "date": "2021-7-12 03:24:33 +0300",
+        "ratings": {
+          "Cleanliness": 4,
+          "Overall": 4,
+          "Service": 5
+        }
+      },
+      {
+        "author": "Orion Feeney",
+        "content": "Employees were absolutely superb. The front desk clerk was extremely helpful. And a FREE very good and big breakfast. Perfecto!",
+        "date": "2019-12-28 18:24:05 +0300",
+        "ratings": {
+          "Cleanliness": 5,
+          "Service": 5,
+          "Overall": 4
+        }
+      },
+      {
+        "author": "August Doyle",
+        "content": "The rooms were very nice - suites- with a separate living room area.",
+        "date": "2015-10-04 02:29:51 +0300",
+        "ratings": {
+          "Cleanliness": 4,
+          "Service": 4,
+          "Overall": 4
+        }
+      }
+    ],
+    "url": "http://www.figueroahotel.com/",
+    "vacancy": true
+  }
+]]

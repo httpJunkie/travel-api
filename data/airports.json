@@ -1,0 +1,97 @@
+// SF
+[[
+  {
+    "id": 1,
+    "airportname": "San Francisco Intl",
+    "city": "San Francisco",
+    "faa": "SFO",
+    "geo": {
+      "lat": 37.618972,
+      "lon": -122.374889
+    }
+  },
+  {
+    "id": 2,
+    "airportname": "Norman Y Mineta San Jose Intl",
+    "city": "San Jose",
+    "faa": "SJC",
+    "geo": {
+      "lat": 37.3626,
+      "lon": -121.929022
+    }
+  },
+  {
+    "id": 3,
+    "airportname": "San Carlos Airport",
+    "city": "San Carlos",
+    "faa": "SQL",
+    "geo": {
+      "lat": 37.511944,
+      "lon": -122.249444
+    }
+  },
+  {
+    "id": 4,
+    "airportname": "Metropolitan Oakland Intl",
+    "city": "Oakland",
+    "faa": "OAK",
+    "geo": {
+      "lat": 37.721278,
+      "lon": -122.220722
+    }
+  }
+],
+
+// LA
+[
+  {
+    "id": 5,
+    "airportname": "Los Angeles Intl",
+    "city": "Los Angeles",
+    "faa": "LAX",
+    "geo": {
+      "lat": 33.942536,
+      "lon": -118.408075
+    }
+  },
+  {
+    "id": 6,
+    "airportname": "Whiteman Airport",
+    "city": "Los Angeles",
+    "faa": "WHP",
+    "geo": {
+      "lat": 34.2593253,
+      "lon": -118.4134331
+    }
+  },
+  {
+    "id": 7,
+    "airportname": "Long Beach",
+    "city": "Long Beach",
+    "faa": "LGB",
+    "geo": {
+      "lat": 33.817722,
+      "lon": -118.151611
+    }
+  },
+  {
+    "id": 8,
+    "airportname": "Bob Hope",
+    "city": "Burbank",
+    "faa": "BUR",
+    "geo": {
+      "lat": 34.200667,
+      "lon": -118.358667
+    }
+  },
+  {
+    "id": 9,
+    "airportname": "John Wayne Arpt Orange Co",
+    "city": "Santa Ana",
+    "faa": "SNA",
+    "geo": {
+      "lat": 33.675667,
+      "lon": -117.868222
+    }
+  }
+]]

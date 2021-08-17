@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "United Airlines",
+    "callsign": "UNITED"
+  },
+  {
+    "id": 2,
+    "name": "Southwest Airlines",
+    "callsign": "SOUTHWEST"
+  },
+  {
+    "id": 3,
+    "name": "American Airlines",
+    "callsign": "AMERICAN"
+  },
+  {
+    "id": 4,
+    "name": "Delta Air Lines",
+    "callsign": "DELTA"
+  }
+]

@@ -1,0 +1,47 @@
+//LA 
+[
+  {
+    "id": 1,
+    "airlineid": "airline_1",
+    "sourceairport": "SFO",
+    "destinationairport": "LAX",
+    "equipment": "Airbus A320",
+    "stops": 0,
+    "schedule": [{
+      "day": 0,
+      "utc": "8:30:00",
+      "flight": "UA2617"
+    },{
+      "day": 1,
+      "utc": "10:35:00",
+      "flight": "UA552"
+    },{
+      "day": 2,
+      "utc": "14:15:00",
+      "flight": "UA2114"
+    },{
+      "day": 3,
+      "utc": "22:30:00",
+      "flight": "UA1209"
+    }],
+    "distance": 337
+  },
+  {
+    "id": 2,
+    "airlineid": "airline_1",
+    "sourceairport": "LAX",
+    "destinationairport": "SJC",
+    "equipment": "Airbus A320",
+    "stops": 0,
+    "schedule": [{
+      "day": 0,
+      "utc": "19:00:00",
+      "flight": "UA1666"
+    },{
+      "day": 1,
+      "utc": "22:30:00",
+      "flight": "UA1597"
+    }],
+    "distance": 350
+  }
+]

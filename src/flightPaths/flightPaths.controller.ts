@@ -1,8 +1,8 @@
 import express, { Request, Response } from 'express'
 import { Query, getDefaultInstance } from 'ottoman'
 
-import makeResponse from '../shared/make.response'
 import { CustomRoute } from '../shared/custom.route'
+import makeResponse from '../shared/make.response'
 
 import FlightPathModel from './flightPaths.model'
 import AirportModel from '../airports/airports.model'
@@ -26,7 +26,7 @@ class FlightPathsController extends CustomRoute {
         const toDocument = await AirportModel.findById(to, { select: 'faa' })
         const conn = getDefaultInstance()
         const query = new Query({}, 
-          `\`${conn.bucketName}\`.travel.flightPaths as r 
+          `${conn.bucketName}.travel.flightPaths as r 
           UNNEST r.schedule as s`
         )
           .select(`
@@ -35,7 +35,7 @@ class FlightPathsController extends CustomRoute {
             r.sourceairport, r.destinationairport, r.equipment
           `)
           .plainJoin(`
-            JOIN \`${conn.bucketName}\`.travel.airlines as a 
+            JOIN ${conn.bucketName}.travel.airlines as a 
             ON KEYS r.airlineid
           `)
           .where({
@@ -47,7 +47,7 @@ class FlightPathsController extends CustomRoute {
           .offset(Number(skip || 0))
           .orderBy({ 'a.name': 'ASC' })
           const result = await conn.query(query.build())
-          // console.log(query.build())
+          console.log(query.build())
           const { rows: items } = result
           return { items }
       })

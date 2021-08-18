@@ -1,8 +1,10 @@
 import express, { Request, Response } from 'express'
-import AirportModel from './airports.model'
-import makeResponse from '../shared/make.response'
 import { FindOptions } from 'ottoman'
+
+import makeResponse from '../shared/make.response'
 import { CustomRoute } from '../shared/custom.route'
+
+import AirportModel from './airports.model'
 
 class AirportsController extends CustomRoute {
 

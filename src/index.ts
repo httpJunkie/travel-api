@@ -5,7 +5,7 @@ import App from './app'
 import HotelsController from './hotels/hotels.controller'
 import AirportsController from './airports/airports.controller'
 import AirlinesController from './airlines/airlines.controller'
-import FlightPathsController from './flightPaths/flightpaths.controller'
+import FlightPathsController from './flightPaths/flightPaths.controller'
 
 const app = new App(
   [

@@ -2,9 +2,9 @@ import express, { Request, Response } from 'express'
 import { FindOptions } from 'ottoman'
 
 import { CustomRoute } from '../shared/custom.route'
+import makeResponse from '../shared/make.response'
 
 import HotelModel from './hotels.model'
-import makeResponse from '../shared/make.response'
 
 class HotelsController extends CustomRoute {
 

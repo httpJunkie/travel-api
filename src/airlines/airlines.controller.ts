@@ -1,8 +1,10 @@
 import express, { Request, Response } from 'express'
-import AirlineModel from './airlines.model'
-import makeResponse from '../shared/make.response'
 import { FindOptions } from 'ottoman'
+
+import makeResponse from '../shared/make.response'
 import { CustomRoute } from '../shared/custom.route'
+
+import AirlineModel from './airlines.model'
 
 class AirlinesController extends CustomRoute {
 
@@ -23,14 +25,12 @@ class AirlinesController extends CustomRoute {
           limit: Number(limit || 50), 
           skip: Number(skip || 0) 
         })
-        const filter = (nameSearch) 
+        const filter = (nameSearch)
           ? { name: { $like: `%${nameSearch}%` } } 
           : {}
         const result = await AirlineModel.find(filter, options)
         const { rows: items } = result
-        return {
-          items,
-        }
+        return { items }
       })
     })
   }

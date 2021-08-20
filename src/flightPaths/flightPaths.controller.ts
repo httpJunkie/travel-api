@@ -26,7 +26,7 @@ class FlightPathsController extends CustomRoute {
         const toDocument = await AirportModel.findById(to, { select: 'faa' })
         const conn = getDefaultInstance()
         const query = new Query({}, 
-          `${conn.bucketName}.travel.flightPaths as r 
+          `\`${conn.bucketName}\`.travel.flightPaths as r 
           UNNEST r.schedule as s`
         )
           .select(`
@@ -35,7 +35,7 @@ class FlightPathsController extends CustomRoute {
             r.sourceairport, r.destinationairport, r.equipment
           `)
           .plainJoin(`
-            JOIN ${conn.bucketName}.travel.airlines as a 
+            JOIN \`${conn.bucketName}\`.travel.airlines as a 
             ON KEYS r.airlineid
           `)
           .where({

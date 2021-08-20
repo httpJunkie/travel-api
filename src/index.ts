@@ -17,6 +17,7 @@ const app = new App(
   4500
 )
 
+
 start().then(() => {
   console.info('All the indexes were registered')
   app.listen()

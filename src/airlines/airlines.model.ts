@@ -1,3 +1,4 @@
+
 import { model, Schema } from 'ottoman'
 
 const AirlineSchema = new Schema({
@@ -13,3 +14,4 @@ const AirlineModel = model('airline', AirlineSchema, {
 })
 
 export default AirlineModel
+

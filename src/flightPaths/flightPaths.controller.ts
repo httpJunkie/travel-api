@@ -25,31 +25,38 @@ class FlightPathsController extends CustomRoute {
         const fromDocument = await AirportModel.findById(from, { select: 'faa' })
         const toDocument = await AirportModel.findById(to, { select: 'faa' })
         const conn = getDefaultInstance()
-        const query = new Query({}, 
-          `\`${conn.bucketName}\`.travel.flightPaths as r 
-          UNNEST r.schedule as s`
-        )
-          .select(`
-            a.name, 
-            s.flight, s.utc, s.day, 
-            r.sourceairport, r.destinationairport, r.equipment
-          `)
-          .plainJoin(`
-            JOIN \`${conn.bucketName}\`.travel.airlines as a 
-            ON KEYS r.airlineid
-          `)
-          .where({
-            'r.sourceairport': fromDocument.faa,
-            'r.destinationairport': toDocument.faa,
-            'r.type': 'flightPath'
-          })
-          .limit(Number(limit || 50))
-          .offset(Number(skip || 0))
-          .orderBy({ 'a.name': 'ASC' })
-          const result = await conn.query(query.build())
-          console.log(query.build())
-          const { rows: items } = result
-          return { items }
+        
+        const params = {
+          limit: Number(limit || 50),
+          offset: Number(skip || 0)
+        }
+
+        const query = new Query(params, `
+          \`${conn.bucketName}\`.travel.flightPaths as r 
+          UNNEST r.schedule as s
+        `)
+        .select(`
+          a.name, 
+          s.flight, s.utc, s.day, 
+          r.sourceairport, r.destinationairport, r.equipment
+        `)
+        .plainJoin(`
+          JOIN \`${conn.bucketName}\`.travel.airlines as a 
+          ON KEYS r.airlineid
+        `)
+        .where({
+          'r.sourceairport': fromDocument.faa,
+          'r.destinationairport': toDocument.faa,
+          'r.type': 'flightPath'
+        })
+        // .limit(Number(limit || 50))
+        // .offset(Number(skip || 0))
+        .orderBy({ 'a.name': 'ASC' })
+
+        const result = await conn.query(query.build())
+        // console.log(query.build())
+        const { rows: items } = result
+        return { items }
       })
     })
   }

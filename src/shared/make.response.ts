@@ -21,4 +21,8 @@ async function makeResponse(res, action) {
   }
 }
 
+// function will always response to client
+// reuse try-catch logic handling errors and also this
+// reduce boilerplate in controllers
+
 export default makeResponse

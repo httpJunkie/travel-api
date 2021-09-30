@@ -1,5 +1,4 @@
-import { start } from 'ottoman'
-require('./ottoman-global-config')
+import { ottoman } from "./ottoman-global-config"
 
 import App from './app'
 import HotelsController from './hotels/hotels.controller'
@@ -18,8 +17,20 @@ const app = new App(
 )
 
 
-start().then(() => {
-  console.info('All the indexes were registered')
-  app.listen()
-}).catch(e => console.error(e))
+const main = async () => {
+  try {
+    await ottoman.connect({
+      bucketName: 'travel-api',
+      connectionString: 'couchbase://localhost:8091',
+      username: 'Administrator',
+      password: 'password',
+    })
+    await ottoman.start()
+    app.listen()
+  } catch (e) {
+    console.log(e)
+  }
+}
+
+main()
 

@@ -1,4 +1,4 @@
-const { Ottoman } = require('ottoman')
+import { Ottoman, Couchbase } from 'ottoman'
 
 const ottoman = new Ottoman({
   modelKey: 'type',
@@ -7,9 +7,11 @@ const ottoman = new Ottoman({
   keyGeneratorDelimiter: '_'
 })
 
-ottoman.connect({
-  bucketName: 'travel-api',
-  connectionString: 'couchbase://localhost:8091',
-  username: 'Administrator',
-  password: 'password'
-})
+export { ottoman }
+
+// ottoman.connect({
+//   bucketName: 'travel-api',
+//   connectionString: 'couchbase://localhost',
+//   username: 'Administrator',
+//   password: 'password'
+// })

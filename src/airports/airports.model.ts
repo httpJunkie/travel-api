@@ -4,7 +4,6 @@ import GeolocationSchema from '../shared/geolocation.schema'
 
 const AirportSchema = new Schema({
   airportname: { type: String, required: true },
-  city: { type: String, required: true },
   faa: String,
   geo: GeolocationSchema,
 })

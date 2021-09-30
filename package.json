@@ -2,7 +2,7 @@
   "name": "travel-api",
   "version": "1.0.0",
   "description": "The travel-sample API using the Ottoman Js v2",
-  "main": "server.js",
+  "main": "index.ts",
   "scripts": {
     "test": "test",
     "start": "ts-node-dev --respawn src/index.ts"
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/couchbaselabs/try-ottoman#readme",
   "dependencies": {
     "express": "4.17.1",
-    "ottoman": "^2.0.0-beta.8"
+    "ottoman": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "16.3.3",

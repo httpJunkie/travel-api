@@ -25,7 +25,7 @@ Once logged in create a new bucket.
 2. Click "ADD BUCKET"
 3. Name your bucket `travel-api`
 
-## Resources for Ottoman JS
+## Resources
 
 - [OttomanJS.com](https://ottomanjs.com)
 - [OttomanJS Official JavaScript Demo](https://github.com/couchbaselabs/try-ottoman)

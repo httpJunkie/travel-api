@@ -1,6 +1,6 @@
 /* Validate a field on Model.save() using Ottoman addValidators()  */
 const { Ottoman, model, Schema } = require('ottoman')
-const ottoman = new Ottoman({collectionName: '_default'});
+const ottoman = new Ottoman({collectionName: '_default'})
 
 const regx = /^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$/
 const airlineSchema = new Schema({ 

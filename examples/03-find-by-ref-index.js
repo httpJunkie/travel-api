@@ -1,6 +1,6 @@
 /* Demonstrate data retrieval using refdoc Indexes */
 const { Ottoman, model, Schema } = require('ottoman')
-const ottoman = new Ottoman({collectionName: '_default'});
+const ottoman = new Ottoman({collectionName: '_default'})
 
 const airlineSchema = new Schema({
   callsign: String,

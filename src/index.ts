@@ -16,7 +16,6 @@ const app = new App(
   4500
 )
 
-
 const main = async () => {
   try {
     await ottoman.connect({

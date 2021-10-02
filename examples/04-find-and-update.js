@@ -1,6 +1,6 @@
 /* Find airline and update using Model.findOne() & Model.update()  */
 const { Ottoman, model, Schema, SearchConsistency } = require('ottoman')
-const ottoman = new Ottoman({collectionName: '_default'});
+const ottoman = new Ottoman({collectionName: '_default'})
 
 const airlineSchema = new Schema({
   callsign: String,

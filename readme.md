@@ -25,13 +25,12 @@ Once logged in create a new bucket.
 2. Click "ADD BUCKET"
 3. Name your bucket `travel-api`
 
-## Learning Videos About JSON Data Modeling
+## Resources for Ottoman JS
 
 - [OttomanJS.com](https://ottomanjs.com)
 - [OttomanJS Official JavaScript Demo](https://github.com/couchbaselabs/try-ottoman)
 - [OttomanJS Official TypeScript Demo](https://github.com/couchbaselabs/try-ottoman-ts)
 - [Couchbase Official Docker Image](https://hub.docker.com/_/couchbase)
-- [JSON Data Modeling Resources](https://github.com/httpJunkie/node-cb-data-models/blob/master/readme.md)
 
 ## Speaker Details
 

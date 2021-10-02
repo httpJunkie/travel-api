@@ -1,6 +1,6 @@
 # Ottoman JS Resources
 
-This repo has the entire example from our demo at JS & Friends and also contains resources for JavaScript developers using Couchbase and Ottoman.
+This repo is the working example from our demo at Couchbse Connect 2021 on OttomanJS and also contains resources for JavaScript developers using Couchbase and Ottoman.
 
 ## Setting up Couchbase Server (Document Database) Using Docker
 
@@ -27,8 +27,13 @@ Once logged in create a new bucket.
 
 ## Learning Videos About JSON Data Modeling
 
-- [v1.ottomanjs.com](https://v1.ottomanjs.com)
-- [v2.ottomanjs.com (latest in beta)](https://v2.ottomanjs.com)
+- [OttomanJS.com (latest in beta)](https://ottomanjs.com)
+- [OttomanJS Official JavaScript Demo](https://github.com/couchbaselabs/try-ottoman)
+- [OttomanJS Official TypeScript Demo](https://github.com/couchbaselabs/try-ottoman-ts)
 - [Couchbase Official Docker Image](https://hub.docker.com/_/couchbase)
 - [JSON Data Modeling Resources](https://github.com/httpJunkie/node-cb-data-models/blob/master/readme.md)
 
+## Speaker Details
+
+- Eric Bishard ([@httpJunkie](https://twitter.com/httpjunkie))
+- Arun Vijayraghavan ([@ArunVijayragha1](https://twitter.com/ArunVijayragha1))

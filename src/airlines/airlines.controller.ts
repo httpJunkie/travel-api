@@ -3,7 +3,6 @@ import { FindOptions } from 'ottoman'
 
 import makeResponse from '../shared/make.response'
 import { CustomRoute } from '../shared/custom.route'
-
 import AirlineModel from './airlines.model'
 
 class AirlinesController extends CustomRoute {

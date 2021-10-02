@@ -27,7 +27,7 @@ Once logged in create a new bucket.
 
 ## Learning Videos About JSON Data Modeling
 
-- [OttomanJS.com (latest in beta)](https://ottomanjs.com)
+- [OttomanJS.com](https://ottomanjs.com)
 - [OttomanJS Official JavaScript Demo](https://github.com/couchbaselabs/try-ottoman)
 - [OttomanJS Official TypeScript Demo](https://github.com/couchbaselabs/try-ottoman-ts)
 - [Couchbase Official Docker Image](https://hub.docker.com/_/couchbase)

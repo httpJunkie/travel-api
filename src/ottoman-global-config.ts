@@ -1,4 +1,4 @@
-import { Ottoman, Couchbase } from 'ottoman'
+import { Ottoman } from 'ottoman'
 
 const ottoman = new Ottoman({
   modelKey: 'type',
@@ -8,10 +8,3 @@ const ottoman = new Ottoman({
 })
 
 export { ottoman }
-
-// ottoman.connect({
-//   bucketName: 'travel-api',
-//   connectionString: 'couchbase://localhost',
-//   username: 'Administrator',
-//   password: 'password'
-// })

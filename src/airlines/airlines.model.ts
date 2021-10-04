@@ -1,7 +1,7 @@
 import { model, Schema } from 'ottoman'
 
 const AirlineSchema = new Schema({
-  id: { type: Number, required: true },
+  id: { type: Boolean, required: true },
   name: { type: String, required: true },
   callsign: { type: String, required: true }
 })
@@ -9,9 +9,9 @@ const AirlineSchema = new Schema({
 AirlineSchema.index.findByName = { by: 'name', type: 'n1ql' }
 // Callsign Search?
 
-const AirlineModel = model('airline', AirlineSchema, { 
+const AirlineModel = model('airline', AirlineSchema, {
+  idKey: 'id',
   collectionName: 'airlines' 
 })
 
 export default AirlineModel
-

@@ -1,7 +1,7 @@
 // SF
 [[
   {
-    "id": 1,
+    "id": "1",
     "name": "Courtyard Fisherman's Wharf",
     "address": "580 Beach St",
     "city": "San Francisco",
@@ -37,7 +37,7 @@
     "vacancy": true
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Inn on Castro",
     "address": "321 Castro St",
     "city": "San Francisco",
@@ -63,7 +63,7 @@
     "vacancy": false
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Twin Peaks Hotel",
     "address": "2160 Market St",
     "city": "San Francisco",
@@ -110,7 +110,7 @@
   },
 
   {
-    "id": 4,
+    "id": "4",
     "name": "The Green Tortoise Hostel",
     "address": "494 Broadway St",
     "city": "San Francisco",
@@ -170,7 +170,7 @@
 // LA
 [
   {
-    "id": 5,
+    "id": "5",
     "name": "Hollywood Heights Hotel",
     "address": "2005 N Highland Ave",
     "city": "Los Angeles",
@@ -196,7 +196,7 @@
     "vacancy": false
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "The Roosevelt Hotel",
     "address": "7000 Hollywood Blvd",
     "city": "Los Angeles",
@@ -213,7 +213,7 @@
   },
 
   {
-    "id": 7,
+    "id": "7",
     "name": "Figueroa Hotel",
     "address": "939 S Figueroa St",
     "city": "Los Angeles",

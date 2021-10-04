@@ -6,7 +6,9 @@ async function makeResponse(res, action) {
     res.json(result)
   } catch (error:any) {
     console.log(error)
-    const status = error.message !== undefined && error.message.indexOf('not found') !== -1 ? 404 : 500
+    const status = error.message !== undefined && error.message.indexOf('not found') !== -1 
+      ? 404 
+        : 500
     res.status(error instanceof ValidationError ? 400 : status)
     res.json({ message: error.message })
   }

@@ -28,9 +28,13 @@ Once logged in create a new bucket.
 ## Resources
 
 - [OttomanJS.com](https://ottomanjs.com)
+- [Introducing Ottoman v2.0](https://blog.couchbase.com/ottoman-2-0-odm-node-js-couchbase/)
+- [Couchbase Official Docker Image](https://hub.docker.com/_/couchbase)
+
+## Official Demos
+
 - [OttomanJS Official JavaScript Demo](https://github.com/couchbaselabs/try-ottoman)
 - [OttomanJS Official TypeScript Demo](https://github.com/couchbaselabs/try-ottoman-ts)
-- [Couchbase Official Docker Image](https://hub.docker.com/_/couchbase)
 
 ## Speaker Details
 

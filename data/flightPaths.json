@@ -1,7 +1,6 @@
-//LA 
 [
   {
-    "id": 1,
+    "id": "1",
     "airlineid": "airline_1",
     "sourceairport": "SFO",
     "destinationairport": "LAX",
@@ -27,7 +26,7 @@
     "distance": 337
   },
   {
-    "id": 2,
+    "id": "2",
     "airlineid": "airline_1",
     "sourceairport": "LAX",
     "destinationairport": "SJC",

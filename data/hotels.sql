@@ -1,3 +1,3 @@
 SELECT h.*
-FROM `travel-sample`.`_default`.`_default` h
+FROM `travel-api`.`travel`.`hotels` h
 WHERE h.type="hotel" AND h.city = "San Francisco"

@@ -1,0 +1,625 @@
+{
+	"info": {
+		"_postman_id": "e9d7336d-9a04-46da-bfbe-075e36e19dbb",
+		"name": "Travel API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "airlines",
+			"item": [
+				{
+					"name": "airlines",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"4\",\n    \"name\": \"Delta Air Lines\",\n    \"callsign\": \"DELTA\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/airlines/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airlines",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airlines/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/airlines/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airlines",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airline",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/airlines?skip=&limit=&nameSearch=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airlines"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "callsignSearch",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "nameSearch",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airlines/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"United AirlineZ\",\n  \"callsign\": \"UNITED\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/airlines/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airlines",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airlines/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"United Airlines\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/airlines/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airlines",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airlines/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/airlines/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airlines",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "airports",
+			"item": [
+				{
+					"name": "airports",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"1\",\n  \"name\": \"United Airlines\",\n  \"callsign\": \"UNITED\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/airports/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airports",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airports/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/airports/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airports",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/airports?skip=&limit=&search=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airports"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airports/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"airportname\": \"San Francisco Internationalz\",\n    \"city\": \"San Francisco\",\n    \"faa\": \"KSFO\",\n    \"geo\": {\n      \"lat\": 37.618972,\n      \"lon\": -122.374889\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/airports/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airports",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "airports/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"airportname\": \"San Francisco Intternational\",\n    \"faa\": \"SFO\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/airports/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"airports",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "flightPaths",
+			"item": [
+				{
+					"name": "flightPaths",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"1\",\n  \"airlineid\": \"airline_1\",\n  \"sourceairport\": \"SFO\",\n  \"destinationairport\": \"LAX\",\n  \"equipment\": \"Airbus A320\",\n  \"stops\": 0,\n  \"schedule\": [{\n    \"day\": 0,\n    \"utc\": \"8:30:00\",\n    \"flight\": \"UA2617\"\n  },{\n    \"day\": 1,\n    \"utc\": \"10:35:00\",\n    \"flight\": \"UA552\"\n  },{\n    \"day\": 2,\n    \"utc\": \"14:15:00\",\n    \"flight\": \"UA2114\"\n  },{\n    \"day\": 3,\n    \"utc\": \"22:30:00\",\n    \"flight\": \"UA1209\"\n  }],\n  \"distance\": 337\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/flightPaths/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"flightPaths",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flightPaths/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/flightPaths/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"flightPaths",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flightPaths",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/flightPaths?skip=&limit=&from=1&to=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"flightPaths"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "from",
+									"value": "1",
+									"description": "Departing"
+								},
+								{
+									"key": "to",
+									"value": "5",
+									"description": "Arriving"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flightPaths/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1234,\n    \"name\": \"Couchbaze Inn and Suites\",\n    \"alias\": \"The Couch\",\n    \"address\": \"123 Couchbase St\",\n    \"city\": \"Malibu\",\n    \"country\": \"United States\",\n    \"state\": \"California\",\n    \"description\": \"A hotel.\",\n    \"directions\": \"Right off tthe 101\",\n    \"email\": \"red@couchbase.com\",\n    \"fax\": null,\n    \"free_breakfast\": true,\n    \"free_internet\": true,\n    \"free_parking\": false,\n    \"geo\": {\n        \"accuracy\": \"ROOFTOP\",\n        \"lat\": 52.9464,\n        \"lon\": -4.2795\n    },\n    \"pets_ok\": false,\n    \"phone\": \"321-123-0321\",\n    \"price\": \"From £380 to £1200 weekly (winter breaks from £80 nightly)\",\n    \"public_likes\": [\n        \"Audreanne Hills\",\n        \"Javonte Quitzon\",\n        \"Alverta Reynolds\",\n        \"Godfrey Boyle IV\"\n    ],\n    \"reviews\": [\n        {\n            \"author\": \"Constance Koss\",\n            \"content\": \"My favorite type of hotel.\",\n            \"date\": \"2020-07-12 10:05:24 +0300\",\n            \"ratings\": {\n                \"Business service (e.g., internet access)\": 4,\n                \"Check in / front desk\": 5,\n                \"Cleanliness\": 5,\n                \"Location\": 5,\n                \"Overall\": 5,\n                \"Rooms\": 5,\n                \"Service\": 5,\n                \"Value\": 5\n            }\n        },\n        {\n            \"author\": \"Eric Bishard\",\n            \"content\": \"Awesome hotel.\",\n            \"date\": \"2019-04-15 10:05:24 +0300\",\n            \"ratings\": {\n                \"Business service (e.g., internet access)\": 4,\n                \"Check in / front desk\": 5,\n                \"Cleanliness\": 5,\n                \"Location\": 5,\n                \"Overall\": 5,\n                \"Rooms\": 5,\n                \"Service\": 5,\n                \"Value\": 5\n            }\n        }\n    ],\n    \"title\": \"The Couch\",\n    \"tollfree\": null,\n    \"url\": \"http://www.couchbase.com\",\n    \"vacancy\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/flightPaths/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"flightPaths",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flightPaths/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Couchbase Inn and Suites\",\n    \"alias\": \"The Couch\",\n    \"vacancy\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/flightPaths/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"flightPaths",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hotels",
+			"item": [
+				{
+					"name": "hotels",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"id\": \"7\",\n      \"name\": \"Figueroa Hotel\",\n      \"address\": \"939 S Figueroa St\",\n      \"city\": \"Los Angeles\",\n      \"state\": \"California\",\n      \"geo\": {\n        \"lat\": 34.045481,\n        \"lon\": -118.26387\n      },\n      \"phone\": \"800 421-9092\",\n      \"reviews\": [\n        {\n          \"author\": \"Rey Cronin\",\n          \"content\": \"The hotel looks like the picture which is a good thing, it's beautiful.\",\n          \"date\": \"2021-7-12 03:24:33 +0300\",\n          \"ratings\": {\n            \"Cleanliness\": 4,\n            \"Overall\": 4,\n            \"Service\": 5\n          }\n        },\n        {\n          \"author\": \"Orion Feeney\",\n          \"content\": \"Employees were absolutely superb. The front desk clerk was extremely helpful. And a FREE very good and big breakfast. Perfecto!\",\n          \"date\": \"2019-12-28 18:24:05 +0300\",\n          \"ratings\": {\n            \"Cleanliness\": 5,\n            \"Service\": 5,\n            \"Overall\": 4\n          }\n        },\n        {\n          \"author\": \"August Doyle\",\n          \"content\": \"The rooms were very nice - suites- with a separate living room area.\",\n          \"date\": \"2015-10-04 02:29:51 +0300\",\n          \"ratings\": {\n            \"Cleanliness\": 4,\n            \"Service\": 4,\n            \"Overall\": 4\n          }\n        }\n      ],\n      \"url\": \"http://www.figueroahotel.com/\",\n      \"vacancy\": true\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/hotels/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"hotels",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hotels/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/hotels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hotels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/hotels?skip=&limit=&search=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"hotels"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": ""
+								},
+								{
+									"key": "limit",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hotels/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Courtyard Fisherman'z Wharf\",\n    \"address\": \"580 Beach St\",\n    \"city\": \"San Francisco\",\n    \"state\": \"California\",\n    \"geo\": {\n      \"lat\": 50.962097,\n      \"lon\": 1.954764\n    },\n    \"phone\": \"415 775-3800\",\n    \"reviews\": [\n      {\n        \"author\": \"Gina Jordan\",\n        \"content\": \"This hotel is okay.\",\n        \"date\": \"2020-08-13 23:42:23 +0300\",\n        \"ratings\": {\n          \"Cleanliness\": 7,\n          \"Service\": 5,\n          \"Overall\": 6\n        }\n      },\n      {\n        \"author\": \"Joe Blazay\",\n        \"content\": \"This hotel is great.\",\n        \"date\": \"2020-08-13 23:42:23 +0300\",\n        \"ratings\": {\n          \"Cleanliness\": 7,\n          \"Service\": 9,\n          \"Overall\": 8\n        }\n      }\n    ],\n    \"url\": \"http://www.marriott.com/hotels/travel/sfocf-courtyard-san-francisco-fishermans-wharf/\",\n    \"vacancy\": false\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/hotels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hotels/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Courtyard Fisherman's Wharf\",\n  \"vacancy\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/hotels/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

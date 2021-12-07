@@ -17,15 +17,21 @@ const app = new App(
 )
 
 const main = async () => {
+
   try {
     await ottoman.connect({
       bucketName: 'travel-api',
-      connectionString: 'couchbase://localhost:8091',
-      username: 'Administrator',
-      password: 'password',
+      connectionString: 'couchbases://cb.ch48rafgmf36syp.cloud.couchbase.com?ssl=no_verify',
+      username: 'abc',
+      password: 'EasyAs123!'
     })
-    await ottoman.start()
+    //await ottoman.connect('couchbases://cb.ch48rafgmf36syp.cloud.couchbase.com/xyz@abc:EasyAs123!?ssl=no_verify');
+
+    // await new Promise((resolve) => setTimeout(resolve, 5000))
+
+    ottoman.start()
     app.listen()
+
   } catch (e) {
     console.log(e)
   }
